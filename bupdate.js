@@ -40,7 +40,7 @@ function BrowserUpdate () {
     };
 
     this.getBrowserInfoBoxCSS = function () {
-        this.createElement('style', '', '#browser-update-box { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); font-family: Georgia, Verdana, sans-serif; font-size: 16px; color: #333; }' +
+        this.createElement('style', '', '#browser-update-box { z-index: 1000000; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); font-family: Georgia, Verdana, sans-serif; font-size: 16px; color: #333; }' +
         '#browser-update-box #browser-update-content { position: relative; top: 20%; margin: 0 auto; width: 60%; padding: 2%; background: #fff; }' +
         '#browser-update-box #browser-update-content h1 { font-size: 24px; margin: 0 0 30px 0; }' +
         '#browser-update-box #browser-update-content p { margin: 15px 0; }' +
