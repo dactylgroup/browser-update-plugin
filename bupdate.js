@@ -5,7 +5,6 @@ var BrowserUpdate = {
 
     checkBrowser: function() {
         browser = this.getBrowserInfo();
-        console.log(browser);
 
         if(browser.version <= versions[browser.name])
             this.showInfoBox();
