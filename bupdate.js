@@ -11,21 +11,57 @@ function BrowserUpdate () {
     };
 
     this.getBrowserInfo = function () {
-        var ua=navigator.userAgent,tem,M=ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
-        if(/trident/i.test(M[1])){
-            tem=/\brv[ :]+(\d+)/g.exec(ua) || [];
-            return {name:'MSIE',version:(tem[1]||'')};
+        var objappVersion = navigator.appVersion;
+        var objAgent = navigator.userAgent;
+        var name  = navigator.appName;
+        var objfullVersion  = ''+parseFloat(navigator.appVersion);
+        var version = parseInt(navigator.appVersion,10);
+        var objOffsetName,objOffsetVersion,ix;
+
+        // In Chrome
+        if ((objOffsetVersion=objAgent.indexOf("Chrome"))!=-1) {
+            name = "Chrome";
+            objfullVersion = objAgent.substring(objOffsetVersion+7);
         }
-        if(M[1]==='Chrome'){
-            tem=ua.match(/\bOPR\/(\d+)/);
-            if(tem!=null)   {return {name:'Opera', version:tem[1]};}
+        // In Microsoft internet explorer
+        else if ((objOffsetVersion=objAgent.indexOf("MSIE"))!=-1) {
+            name = "Microsoft Internet Explorer";
+            objfullVersion = objAgent.substring(objOffsetVersion+5);
         }
-        M=M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
-        if((tem=ua.match(/version\/(\d+)/i))!=null) {M.splice(1,1,tem[1]);}
-        return {
-            name: M[0],
-            version: M[1]
-        };
+
+        // In Firefox
+        else if ((objOffsetVersion=objAgent.indexOf("Firefox"))!=-1) {
+            name = "Firefox";
+        }
+        // In Safari
+        else if ((objOffsetVersion=objAgent.indexOf("Safari"))!=-1) {
+            name = "Safari";
+            objfullVersion = objAgent.substring(objOffsetVersion+7);
+            if ((objOffsetVersion=objAgent.indexOf("Version"))!=-1)
+                objfullVersion = objAgent.substring(objOffsetVersion+8);
+        }
+        // For other browser "name/version" is at the end of userAgent
+        else if ( (objOffsetName=objAgent.lastIndexOf(' ')+1)
+            (objOffsetVersion=objAgent.lastIndexOf('/')) )
+        {
+            name = objAgent.substring(objOffsetName,objOffsetVersion);
+            objfullVersion = objAgent.substring(objOffsetVersion+1);
+            if (name.toLowerCase()==name.toUpperCase()) {
+                name = navigator.appName;
+            }
+        }
+        // trimming the fullVersion string at semicolon/space if present
+        if ((ix=objfullVersion.indexOf(";"))!=-1)
+            objfullVersion=objfullVersion.substring(0,ix);
+        if ((ix=objfullVersion.indexOf(" "))!=-1)
+            objfullVersion=objfullVersion.substring(0,ix);
+
+        version = parseInt(''+objfullVersion,10);
+        if (isNaN(version)) {
+            version = parseInt(navigator.appVersion,10);
+        }
+
+        return browser = {name:name, version:version};
     };
 
     this.getBrowserIcon = function(browser) {
