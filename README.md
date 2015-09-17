@@ -6,7 +6,7 @@ Upozorněte uživatele přistupujícího na vaše webové stránky, že použív
 
 Instalace pluginu na web je možná pouhým zkopírováním jednoduchého skriptu na úvodní stránku. Ve skriptu je možné nastavit verze jednotlivých prohlížečů, které se již mají považovat za zastaralé.  Skript je možné vygenerovat na naší stránce <odkaz na generátor>
 
-Je možné posílat návrhy na případná vylepšení nebo chyby na mailto:info@dactylgroup.com
+Je možné posílat návrhy na případná vylepšení nebo chyby na info@dactylgroup.com
 
 Licence:
 
