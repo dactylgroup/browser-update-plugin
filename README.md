@@ -8,7 +8,7 @@ Instalace pluginu na web je možná pouhým zkopírováním jednoduchého skript
 
 Je možné posílat návrhy na případná vylepšení nebo chyby na info@dactylgroup.com
 
-Licence:
+License
 -------
 
 Copyright 2015 Dactyl Group s.r.o.
