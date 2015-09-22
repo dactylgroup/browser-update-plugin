@@ -4,6 +4,7 @@ var BrowserUpdate = {
         var checkBrowser = this.readCookie('checkBrowser');
         if(checkBrowser != "false") {
             browser = this.getBrowserInfo();
+            console.log(browser);
 
             if (browser.version <= versions[browser.name])
                 this.showInfoBox();
