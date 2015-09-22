@@ -8,9 +8,10 @@ var BrowserUpdate = {
             console.log(browser.version);
             console.log(browser.name);
 
-            //if (browser.version <= versions[browser.name])
+            if (browser.version <= versions[browser.name]) {
                 this.showInfoBox();
                 console.log("Melo by se zobrazit okno");
+            }
         //}
         console.log("konec checku");
     },
