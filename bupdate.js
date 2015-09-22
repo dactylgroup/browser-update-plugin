@@ -56,7 +56,7 @@ var BrowserUpdate = {
         '#browser-update-box #browser-update-content h1 { color: #333; font-size: 24px; margin: 0 0 30px 0; }' +
         '#browser-update-box #browser-update-content p { color: #333; margin: 15px 0; }' +
         '#browser-update-box #browser-update-content #browsers { height: 150px; margin: 45px 0; }' +
-        '#browser-update-box #browser-update-content span.a:hover { cursor: pointer; text-decoration: underline; }' +
+        '#browser-update-box #browser-update-content span.a { cursor: pointer; text-decoration: underline; }' +
         '#browser-update-box #browser-update-content #browsers .browser { float: left; width: 25%; text-align: center;}' +
         '#browser-update-box #browser-update-content #browsers .browser img { display: block; max-width: 100%; height: auto; margin: 0 auto; }' +
         '#browser-update-box #browser-update-content #browsers .browser a { display: inline-block; color: #333; line-height: 1.5; text-decoration: none; }');
@@ -81,7 +81,6 @@ var BrowserUpdate = {
         '<li><strong>komfort a lepší funkce:</strong> Poslední verze webových prohlížečů přinášejí stále nové a nové funkce, které uživateli zpříjemňují prohlížení webu a je škoda jich nevyužít</li>' +
         '</ul>' +
         '<span class="a" onclick="BrowserUpdate.hideInfoBox()">Zavřít a pokračovat</span>' +
-        '<p>Zavřením tohoto okna můžete pokračovat v současném prohlížeči. Tuto variantu ale nedoporučujeme.</p>' +
         '</div>');
     },
 
