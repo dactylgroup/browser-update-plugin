@@ -104,7 +104,7 @@ var BrowserUpdate = {
         console.log("Tvorim element "+id);
         var element = document.createElement(element);
         if(id) element.id = id;
-        element.text = content;
+        element.innerHTML = content;
         document.body.appendChild(element);
         console.log("element vytvořen");
     },
