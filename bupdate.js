@@ -92,13 +92,9 @@ var BrowserUpdate = {
     },
 
     createElement: function(element, id, content) {
-        console.log(element);
-        if(id) console.log(id);
-        console.log(content);
         var element = document.createElement(element);
-        console.log(element);
         if(id) element.id = id;
-        element.innerHTML = content;
+        element.text = content;
         document.body.appendChild(element2);
     },
 
