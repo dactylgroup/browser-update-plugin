@@ -1,6 +1,7 @@
 var BrowserUpdate = {
 
     checkBrowser: function() {
+        console.log("check");
         var checkBrowser = this.readCookie('checkBrowser');
        // if(checkBrowser != "false") {
             browser = this.getBrowserInfo();
@@ -10,6 +11,7 @@ var BrowserUpdate = {
             //if (browser.version <= versions[browser.name])
                 this.showInfoBox();
         //}
+        console.log("konec checku");
     },
 
     getBrowserInfo: function () {
@@ -121,8 +123,9 @@ var BrowserUpdate = {
     },
 
     eraseCookie: function(name) {
-    createCookie(name,"",-1);
+        this.createCookie(name,"",-1);
     }
 };
 
+console.log("spousti se");
 BrowserUpdate.checkBrowser();
