@@ -1,13 +1,13 @@
-/* Created By Aleš Fabiánek */
-/*       Dactyl Group       */
-
 var BrowserUpdate = {
 
     checkBrowser: function() {
-        browser = this.getBrowserInfo();
+        var checkBrowser = this.readCookie('checkBrowser');
+        if(checkBrowser != "false") {
+            browser = this.getBrowserInfo();
 
-        if(browser.version <= versions[browser.name])
-            this.showInfoBox();
+            if (browser.version <= versions[browser.name])
+                this.showInfoBox();
+        }
     },
 
     getBrowserInfo: function () {
@@ -53,8 +53,8 @@ var BrowserUpdate = {
     getBrowserInfoBoxCSS: function () {
         this.createElement('style', '', '#browser-update-box { z-index: 1000000; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); font-family: Georgia, Verdana, sans-serif; font-size: 16px; color: #333; }' +
         '#browser-update-box #browser-update-content { position: relative; top: 20%; margin: 0 auto; width: 60%; padding: 2%; background: #fff; }' +
-        '#browser-update-box #browser-update-content h1 { font-size: 24px; margin: 0 0 30px 0; }' +
-        '#browser-update-box #browser-update-content p { margin: 15px 0; }' +
+        '#browser-update-box #browser-update-content h1 { color: #333; font-size: 24px; margin: 0 0 30px 0; }' +
+        '#browser-update-box #browser-update-content p { color: #333; margin: 15px 0; }' +
         '#browser-update-box #browser-update-content #browsers { height: 150px; margin: 45px 0; }' +
         '#browser-update-box #browser-update-content span.a:hover { cursor: pointer; text-decoration: underline; }' +
         '#browser-update-box #browser-update-content #browsers .browser { float: left; width: 25%; text-align: center;}' +
@@ -65,15 +65,21 @@ var BrowserUpdate = {
     showInfoBox: function() {
         this.getBrowserInfoBoxCSS();
         this.createElement('div', 'browser-update-box', '<div id="browser-update-content">' +
-        '<h1>Váš webový prohlížeč je zastaralý</h1>' +
-        '<p>Používáte verzi webového prohlížeče, která je již zastaralá a s naším webem nebude pravděpodobně pracovat správně.</p>' +
-        '<p>Nainstalujte si prosím novější verzi nebo nový prohlížeč. Některé možnosti nabízíme níže, stačí na ně kliknout. Odměnou Vám bude výrazně lepší výkon a kvalita zobrazení stránek na internetu.</p>' +
+        '<h1>Používáte zastaralý webový prohlížeč</h1>' +
+        '<p>Verze vašeho webového prohlížeče je zastaralá a pravděpodobně nebude zobrazovat náš web správně. Doporučujeme nainstalovat aktuální verzi jednoho z níže uvedených prohlížečů, které jsou v současné době na internetu nejpoužívanější:</p>' +
         '<div id="browsers">' +
         '<div class="browser"><a href="https://www.google.com/intl/cs/chrome/browser/desktop/index.html"><img src="'+this.getBrowserIcon('ch')+'" alt="Chrome" title="Chrome"><span>Chrome</span></a></div>' +
         '<div class="browser"><a href="http://www.mozilla.cz/stahnout/firefox/"><img src="'+this.getBrowserIcon('f')+'" alt="Mozilla Firefox" title="Mozilla Firefox"><span>Mozilla Firefox</span></a></div>' +
         '<div class="browser"><a href="https://support.apple.com/downloads/safari"><img src="'+this.getBrowserIcon('s')+'" alt="Safari" title="Safari"><span>Safari</span></a></div>' +
         '<div class="browser"><a href="http://windows.microsoft.com/cs-cz/internet-explorer/download-ie"><img src="'+this.getBrowserIcon('ie')+'" alt="Internet Explorer" title="Internet Explorer"><span>Internet Explorer</span></a></div>' +
         '</div>' +
+        '<h2>Proč aktualizovat?</h2>' +
+        '<ul>' +
+        '<li><strong>bezpečnost:</strong> Novější prohlížeče Vás lépe chrání před podvody, viry, trojskými koňmi, phishingem a dalšími hrozbami. Zastaralý prohlížeč může znamenat velké riziko, protože může obsahovat bezpečnostní díry, jejichž opravy vyšly právě s novějšími verzemi.</li>' +
+        '<li><strong>rychlost:</strong> S každou novou verzí prohlížeče přichází nějaká optimalizace a tedy i zrychlení načítání stránek.</li>' +
+        '<li><strong>kompatibilita:</strong> Nové webové stránky využívající nejmodernější technologie nebudou na zastaralém prohlížeči fungovat správně.</li>' +
+        '<li><strong>komfort a lepší funkce:</strong> Poslední verze webových prohlížečů přinášejí stále nové a nové funkce, které uživateli zpříjemňují prohlížení webu a je škoda jich nevyužít</li>' +
+        '</ul>' +
         '<span class="a" onclick="BrowserUpdate.hideInfoBox()">Zavřít a pokračovat</span>' +
         '<p>Zavřením tohoto okna můžete pokračovat v současném prohlížeči. Tuto variantu ale nedoporučujeme.</p>' +
         '</div>');
@@ -82,6 +88,7 @@ var BrowserUpdate = {
     hideInfoBox: function() {
         infoBox = document.getElementById('browser-update-box');
         infoBox.style.display = 'none';
+        this.createCookie('checkBrowser','false', 1);
     },
 
     createElement: function(element, id, content) {
@@ -89,6 +96,31 @@ var BrowserUpdate = {
         if(id) element.id = id;
         element.innerHTML = content;
         document.body.appendChild(element);
+    },
+
+    createCookie: function(name,value,days) {
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime()+(days*24*60*60*1000));
+        var expires = "; expires="+date.toGMTString();
+    }
+    else var expires = "";
+    document.cookie = name+"="+value+expires+"; path=/";
+    },
+
+    readCookie: function(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    },
+
+    eraseCookie: function(name) {
+    createCookie(name,"",-1);
     }
 };
 

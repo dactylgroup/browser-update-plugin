@@ -13,8 +13,8 @@
                 <p><strong>Které verze prohlížečů budou považovány již za staré:</strong></p>
                 <div class="settings">
                     <div class="browser">
-                        <label for="ie">Internet Explorer</label>
-                        <select name="ie">
+                        <label for="MSIE">Internet Explorer</label>
+                        <select name="MSIE">
                             <option value="7">7</option>
                             <option value="8">8</option>
                             <option value="9" selected>9</option>
@@ -22,8 +22,8 @@
                         </select>
                     </div>
                     <div class="browser">
-                        <label for="f">Mozilla Firefox</label>
-                        <select name="f">
+                        <label for="Firefox">Mozilla Firefox</label>
+                        <select name="Firefox">
                             <option value="5">5</option>
                             <option value="10">10</option>
                             <option value="15">15</option>
@@ -34,8 +34,8 @@
                         </select>
                     </div>
                     <div class="browser">
-                        <label for="o">Opera</label>
-                        <select name="o">
+                        <label for="Opera">Opera</label>
+                        <select name="Opera">
                             <option value="12">12</option>
                             <option value="12.1" selected>12.1</option>
                             <option value="15">15</option>
@@ -44,8 +44,8 @@
                         </select>
                     </div>
                     <div class="browser">
-                        <label for="s">Safari</label>
-                        <select name="s">
+                        <label for="Safari">Safari</label>
+                        <select name="Safari">
                             <option value="4.1">4.1</option>
                             <option value="5">5</option>
                             <option value="5.1">5.1</option>
@@ -59,7 +59,7 @@
             </div>
         </main>
         <script>
-            var versions = {MSIE:9,Firefox:25,Opera:12.1,Safari:7,Chrome:23};
+            var versions = {MSIE:9,Firefox:50,Opera:12.1,Safari:7,Chrome:23};
             function browserUpdate() {
                 var script = document.createElement("script");
                 script.src = "bupdate.js";
