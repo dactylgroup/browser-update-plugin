@@ -92,10 +92,10 @@ var BrowserUpdate = {
     },
 
     createElement: function(element, id, content) {
-        var element = document.createElement(element);
-        if(id) element.id = id;
-        element.innerHTML = content;
-        document.body.appendChild(element);
+        var element2 = document.createElement(element);
+        if(id) element2.id = id;
+        element2.innerHTML = content;
+        document.body.appendChild(element2);
     },
 
     createCookie: function(name,value,days) {
