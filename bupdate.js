@@ -2,13 +2,14 @@ var BrowserUpdate = {
 
     checkBrowser: function() {
         var checkBrowser = this.readCookie('checkBrowser');
-        if(checkBrowser != "false") {
+       // if(checkBrowser != "false") {
             browser = this.getBrowserInfo();
-            console.log(browser);
+            console.log(browser.version);
+            console.log(browser.name);
 
-            if (browser.version <= versions[browser.name])
+            //if (browser.version <= versions[browser.name])
                 this.showInfoBox();
-        }
+        //}
     },
 
     getBrowserInfo: function () {
