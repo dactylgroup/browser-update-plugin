@@ -10,6 +10,7 @@ var BrowserUpdate = {
 
             //if (browser.version <= versions[browser.name])
                 this.showInfoBox();
+                console.log("Melo by se zobrazit okno");
         //}
         console.log("konec checku");
     },
@@ -55,6 +56,7 @@ var BrowserUpdate = {
     },
 
     getBrowserInfoBoxCSS: function () {
+        console.log("CSS");
         this.createElement('style', '', '#browser-update-box { z-index: 1000000; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); font-family: Georgia, Verdana, sans-serif; font-size: 16px; color: #333; }' +
         '#browser-update-box #browser-update-content { position: relative; top: 20%; margin: 0 auto; width: 60%; padding: 2%; background: #fff; }' +
         '#browser-update-box #browser-update-content h1 { color: #333; font-size: 24px; margin: 0 0 30px 0; }' +
@@ -64,10 +66,13 @@ var BrowserUpdate = {
         '#browser-update-box #browser-update-content #browsers .browser { float: left; width: 25%; text-align: center;}' +
         '#browser-update-box #browser-update-content #browsers .browser img { display: block; max-width: 100%; height: auto; margin: 0 auto; }' +
         '#browser-update-box #browser-update-content #browsers .browser a { display: inline-block; color: #333; line-height: 1.5; text-decoration: none; }');
+        console.log("Konec CSS");
     },
 
     showInfoBox: function() {
+        console.log("showInfoBox");
         this.getBrowserInfoBoxCSS();
+        console.log("Element po CSS");
         this.createElement('div', 'browser-update-box', '<div id="browser-update-content">' +
         '<h1>Používáte zastaralý webový prohlížeč</h1>' +
         '<p>Verze vašeho webového prohlížeče je zastaralá a pravděpodobně nebude zobrazovat náš web správně. Doporučujeme nainstalovat aktuální verzi jednoho z níže uvedených prohlížečů, které jsou v současné době na internetu nejpoužívanější:</p>' +
@@ -86,6 +91,7 @@ var BrowserUpdate = {
         '</ul>' +
         '<span class="a" onclick="BrowserUpdate.hideInfoBox()">Zavřít a pokračovat</span>' +
         '</div>');
+        console.log("Element po CSS vytvoren");
     },
 
     hideInfoBox: function() {
@@ -95,10 +101,12 @@ var BrowserUpdate = {
     },
 
     createElement: function(element, id, content) {
+        console.log("Tvorim element "+id);
         var element = document.createElement(element);
         if(id) element.id = id;
         element.text = content;
         document.body.appendChild(element);
+        console.log("element vytvořen");
     },
 
     createCookie: function(name,value,days) {
