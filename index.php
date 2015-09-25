@@ -54,12 +54,12 @@
                         </select>
                     </div>
                 </div>
-                <p>Kód vložte kamkoli na svůj web: </p>
-                <textarea name="code" id="code" cols="30" rows="10"><script>var versions = {MSIE:9,Firefox:25,Opera:12.1,Safari:7,Chrome:23};function browserUpdate() {var script = document.createElement("script");script.src = "https://rawgit.com/dactylgroup/browser-update-plugin/master/bupdate.js";document.body.appendChild(script);}try {document.addEventListener("DOMContentLoaded", browserUpdate, false)} catch(e){window.attachEvent("onload", browserUpdate)}</script></textarea>
+                <p><strong>Kód vložte kamkoli na svůj web: </strong></p>
+                <textarea name="code" id="code"><script>var versions = {MSIE:9,Firefox:25,Opera:12.1,Safari:7,Chrome:23};function browserUpdate() {var script = document.createElement("script");script.src = "https://rawgit.com/dactylgroup/browser-update-plugin/master/bupdate.js";document.body.appendChild(script);}try {document.addEventListener("DOMContentLoaded", browserUpdate, false)} catch(e){window.attachEvent("onload", browserUpdate)}</script></textarea>
             </div>
         </main>
         <script>
-            var versions = {MSIE:9,Firefox:50,Opera:12.1,Safari:7,Chrome:23};
+            var versions = {MSIE:9,Firefox:50,Opera:12.1,Safari:7,Chrome:50};
             function browserUpdate() {
                 var script = document.createElement("script");
                 script.src = "bupdate.js";
