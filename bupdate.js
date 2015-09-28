@@ -80,19 +80,19 @@ var BrowserUpdate = {
         '<div id="browser-vertical-align">' +
         '<div id="browser-update-content">' +
         '<h1>Používáte zastaralý webový prohlížeč</h1>' +
-        '<p>Verze vašeho webového prohlížeče je zastaralá a pravděpodobně nebude zobrazovat náš web správně. Doporučujeme nainstalovat aktuální verzi jednoho z níže uvedených prohlížečů, které jsou v současné době na internetu nejpoužívanější:</p>' +
+        '<p>Upozorňujeme vás, že verze webového prohlížeče, který používáte, je zastaralá a pravděpodobně nebude zobrazovat náš web správně. Doporučujeme nainstalovat aktuální verzi jednoho z níže uvedených prohlížečů, které jsou v současné době nejpoužívanější:</p>' +
         '<div id="browsers">' +
-        '<div class="browser"><div class="browser-box"><a href="https://www.google.com/intl/cs/chrome/browser/desktop/index.html"><img src="'+this.getBrowserIcon('ch')+'" alt="Chrome" title="Chrome"></div><span>Chrome</span><button type="button">Stáhnout</button></a></div>' +
+        '<div class="browser"><div class="browser-box"><a href="https://www.google.com/intl/cs/chrome/browser/desktop/index.html"><img src="'+this.getBrowserIcon('ch')+'" alt="Google Chrome" title="Google Chrome"></div><span>Google Chrome</span><button type="button">Stáhnout</button></a></div>' +
         '<div class="browser"><div class="browser-box"><a href="http://www.mozilla.cz/stahnout/firefox/"><img src="'+this.getBrowserIcon('f')+'" alt="Mozilla Firefox" title="Mozilla Firefox"></div><span>Mozilla Firefox</span><button type="button">Stáhnout</button></a></div>' +
-        '<div class="browser"><div class="browser-box"><a href="https://support.apple.com/downloads/safari"><img src="'+this.getBrowserIcon('s')+'" alt="Safari" title="Safari"></div><span>Safari</span><button type="button">Stáhnout</button></a></div>' +
         '<div class="browser"><div class="browser-box"><a href="http://windows.microsoft.com/cs-cz/internet-explorer/download-ie"><img src="'+this.getBrowserIcon('ie')+'" alt="Internet Explorer" title="Internet Explorer"></div><span>Internet Explorer</span><button type="button">Stáhnout</button></a></div>' +
+        '<div class="browser"><div class="browser-box"><a href="https://support.apple.com/downloads/safari"><img src="'+this.getBrowserIcon('s')+'" alt="Safari" title="Safari"></div><span>Safari</span><button type="button">Stáhnout</button></a></div>' +
         '</div>' +
         '<h2>Proč aktualizovat?</h2>' +
         '<ul>' +
-        '<li><strong>bezpečnost:</strong> Novější prohlížeče Vás lépe chrání před podvody, viry, trojskými koňmi, phishingem a dalšími hrozbami. Zastaralý prohlížeč může znamenat velké riziko, protože může obsahovat bezpečnostní díry, jejichž opravy vyšly právě s novějšími verzemi.</li>' +
-        '<li><strong>rychlost:</strong> S každou novou verzí prohlížeče přichází nějaká optimalizace a tedy i zrychlení načítání stránek.</li>' +
-        '<li><strong>kompatibilita:</strong> Nové webové stránky využívající nejmodernější technologie nebudou na zastaralém prohlížeči fungovat správně.</li>' +
-        '<li><strong>komfort a lepší funkce:</strong> Poslední verze webových prohlížečů přinášejí stále nové a nové funkce, které uživateli zpříjemňují prohlížení webu a je škoda jich nevyužít</li>' +
+        '<li><strong>Bezpečnost:</strong> Novější prohlížeče lépe chrání uživatele před podvody, viry, phishingem a dalšími hrozbami.</li>' +
+        '<li><strong>Rychlost:</strong> S každou novou verzí prohlížeče přichází nějaká optimalizace a tedy i zrychlení načítání stránek.</li>' +
+        '<li><strong>Kompatibilita:</strong> Moderní webové stránky využívající nejnovější technologie, které se na zastaralém prohlížeči nebudou zobrazovat správně.</li>' +
+        '<li><strong>Rozšíření:</strong> Možnost využít rozšiřujících funkcí webových prohlížečů, které uživateli ulehčují a zpříjemňují prohlížení webu. </li>' +
         '</ul>' +
         '<span class="a" onclick="BrowserUpdate.hideInfoBox()">Zavřít a pokračovat</span>' +
         '</div>' +
