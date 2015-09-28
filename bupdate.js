@@ -80,7 +80,7 @@ var BrowserUpdate = {
         '<div id="browser-vertical-align">' +
         '<div id="browser-update-content">' +
         '<h1>Používáte zastaralý webový prohlížeč</h1>' +
-        '<p>Upozorňujeme vás, že verze webového prohlížeče, který používáte, je zastaralá a pravděpodobně nebude zobrazovat náš web správně. Doporučujeme nainstalovat aktuální verzi jednoho z níže uvedených prohlížečů, které jsou v současné době nejpoužívanější:</p>' +
+        '<p>Rádi bychom vás upozornili, že váš webový prohlížeč je zastaralý a pravděpodobně nebude zobrazovat náš web správně. Doporučujeme nainstalovat aktuální verzi jednoho z níže uvedených prohlížečů, které jsou v současné době nejpoužívanější:</p>' +
         '<div id="browsers">' +
         '<div class="browser"><div class="browser-box"><a href="https://www.google.com/intl/cs/chrome/browser/desktop/index.html"><img src="'+this.getBrowserIcon('ch')+'" alt="Google Chrome" title="Google Chrome"></div><span>Google Chrome</span><button type="button">Stáhnout</button></a></div>' +
         '<div class="browser"><div class="browser-box"><a href="http://www.mozilla.cz/stahnout/firefox/"><img src="'+this.getBrowserIcon('f')+'" alt="Mozilla Firefox" title="Mozilla Firefox"></div><span>Mozilla Firefox</span><button type="button">Stáhnout</button></a></div>' +
@@ -91,8 +91,8 @@ var BrowserUpdate = {
         '<ul>' +
         '<li><strong>Bezpečnost:</strong> Novější prohlížeče lépe chrání uživatele před podvody, viry, phishingem a dalšími hrozbami.</li>' +
         '<li><strong>Rychlost:</strong> S každou novou verzí prohlížeče přichází nějaká optimalizace a tedy i zrychlení načítání stránek.</li>' +
-        '<li><strong>Kompatibilita:</strong> Moderní webové stránky využívající nejnovější technologie, které se na zastaralém prohlížeči nebudou zobrazovat správně.</li>' +
-        '<li><strong>Rozšíření:</strong> Možnost využít rozšiřujících funkcí webových prohlížečů, které uživateli ulehčují a zpříjemňují prohlížení webu. </li>' +
+        '<li><strong>Kompatibilita:</strong> Moderní webové stránky se na zastaralém prohlížeči nebudou zobrazovat správně.</li>' +
+        '<li><strong>Rozšíření:</strong> Možnost využít rozšiřujících funkcí pro zpříjemňují a ulehčení prohlížení webu.</li>' +
         '</ul>' +
         '<span class="a" onclick="BrowserUpdate.hideInfoBox()">Zavřít a pokračovat</span>' +
         '</div>' +
