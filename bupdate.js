@@ -58,7 +58,7 @@ var BrowserUpdate = {
         '#browser-update-box * { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }' +
         '#browser-update-box { display: table; z-index: 1000000; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000); -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"; font-family: Arial; font-size: 16px; color: #333; }' +
         '#browser-update-box #browser-vertical-align { display: table-cell; vertical-align: middle; padding: 0 15px; }' +
-        '#browser-update-box #browser-update-content { position: relative; margin: 0 auto; width: 100%; max-width: 940px; padding: 30px; background: #fff; }' +
+        '#browser-update-box #browser-update-content { position: relative; margin: 0 auto; width: 100%; max-width: 940px; padding: 30px; background: #fff; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; }' +
         '#browser-update-box #browser-update-content h1 { color: #333; font-size: 24px; margin: 0 0 30px 0; }' +
         '#browser-update-box #browser-update-content h2 { color: #333; font-size: 24px; }' +
         '#browser-update-box #browser-update-content p { color: #333; margin: 15px 0; }' +
@@ -68,9 +68,9 @@ var BrowserUpdate = {
         '#browser-update-box #browser-update-content span.a { cursor: pointer; text-decoration: underline; }' +
         '#browser-update-box #browser-update-content #browsers .browser { float: left; width: 25%; text-align: center;}' +
         '#browser-update-box #browser-update-content #browsers .browser img { display: block; max-width: 100%; height: auto; margin: 0 auto; }' +
-        '#browser-update-box #browser-update-content #browsers .browser span { display: block; font-weight: bold; margin: 15px 0; }' +
+        '#browser-update-box #browser-update-content #browsers .browser span { display: block; font-weight: bold; margin: 15px 0; color: #333; text-decoration: none; }' +
         '#browser-update-box #browser-update-content #browsers .browser .browser-box { display: inline-block; width: 100%; max-width: 120px; color: #333; line-height: 1.5; text-decoration: none; }' +
-        '#browser-update-box #browser-update-content #browsers .browser button { display: inline-block; text-decoration: none; font-weight: bold; width: 100%; max-width: 160px; height: 50px; line-height: 50px; background: #2843e9; color: #fff; font-size: 16px; text-transform: uppercase; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px;}');
+        '#browser-update-box #browser-update-content #browsers .browser button { outline: 0; border: 0; cursor: pointer; display: inline-block; text-decoration: none; font-weight: bold; width: 100%; max-width: 160px; height: 50px; line-height: 50px; background: #2843e9; color: #fff; font-size: 16px; text-transform: uppercase; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px;}');
     },
 
     showInfoBox: function() {
@@ -84,7 +84,7 @@ var BrowserUpdate = {
         '<div class="browser"><div class="browser-box"><a href="https://www.google.com/intl/cs/chrome/browser/desktop/index.html"><img src="'+this.getBrowserIcon('ch')+'" alt="Chrome" title="Chrome"></div><span>Chrome</span><button type="button">Stáhnout</button></a></div>' +
         '<div class="browser"><div class="browser-box"><a href="http://www.mozilla.cz/stahnout/firefox/"><img src="'+this.getBrowserIcon('f')+'" alt="Mozilla Firefox" title="Mozilla Firefox"></div><span>Mozilla Firefox</span><button type="button">Stáhnout</button></a></div>' +
         '<div class="browser"><div class="browser-box"><a href="https://support.apple.com/downloads/safari"><img src="'+this.getBrowserIcon('s')+'" alt="Safari" title="Safari"></div><span>Safari</span><button type="button">Stáhnout</button></a></div>' +
-        '<div class="browser"><div class="browser-box"><a href="http://windows.microsoft.com/cs-cz/internet-explorer/download-ie"><img src="'+this.getBrowserIcon('ie')+'" alt="Internet Explorer" title="Internet Explorer"></div><span><button type="button">Internet Explorer</button></span>Stáhnout</a></div>' +
+        '<div class="browser"><div class="browser-box"><a href="http://windows.microsoft.com/cs-cz/internet-explorer/download-ie"><img src="'+this.getBrowserIcon('ie')+'" alt="Internet Explorer" title="Internet Explorer"></div><span>Internet Explorer</span><button type="button">Stáhnout</button></a></div>' +
         '</div>' +
         '<h2>Proč aktualizovat?</h2>' +
         '<ul>' +
