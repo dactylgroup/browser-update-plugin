@@ -59,10 +59,10 @@
             </div>
         </main>
         <script>
-            var versions = {MSIE:9,Firefox:50,Opera:12.1,Safari:7,Chrome:50};
+            var versions = {MSIE:9,Firefox:25,Opera:12.1,Safari:7,Chrome:23};
             function browserUpdate() {
                 var script = document.createElement("script");
-                script.src = "bupdate.js";
+                script.src = "https://rawgit.com/dactylgroup/browser-update-plugin/master/bupdate.js";
                 document.body.appendChild(script);
             }
             try {document.addEventListener("DOMContentLoaded", browserUpdate, false)}

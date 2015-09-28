@@ -70,7 +70,7 @@ var BrowserUpdate = {
         '#browser-update-box #browser-update-content #browsers .browser img { display: block; max-width: 100%; height: auto; margin: 0 auto; }' +
         '#browser-update-box #browser-update-content #browsers .browser span { display: block; font-weight: bold; margin: 15px 0; }' +
         '#browser-update-box #browser-update-content #browsers .browser .browser-box { display: inline-block; width: 100%; max-width: 120px; color: #333; line-height: 1.5; text-decoration: none; }' +
-        '#browser-update-box #browser-update-content #browsers .browser a { display: inline-block; text-decoration: none; font-weight: bold; width: 100%; max-width: 160px; height: 50px; line-height: 50px; background: #2843e9; color: #fff; font-size: 16px; text-transform: uppercase; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px;}');
+        '#browser-update-box #browser-update-content #browsers .browser button { display: inline-block; text-decoration: none; font-weight: bold; width: 100%; max-width: 160px; height: 50px; line-height: 50px; background: #2843e9; color: #fff; font-size: 16px; text-transform: uppercase; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px;}');
     },
 
     showInfoBox: function() {
@@ -81,10 +81,10 @@ var BrowserUpdate = {
         '<h1>Používáte zastaralý webový prohlížeč</h1>' +
         '<p>Verze vašeho webového prohlížeče je zastaralá a pravděpodobně nebude zobrazovat náš web správně. Doporučujeme nainstalovat aktuální verzi jednoho z níže uvedených prohlížečů, které jsou v současné době na internetu nejpoužívanější:</p>' +
         '<div id="browsers">' +
-        '<div class="browser"><div class="browser-box"><img src="'+this.getBrowserIcon('ch')+'" alt="Chrome" title="Chrome"></div><span>Chrome</span><a href="https://www.google.com/intl/cs/chrome/browser/desktop/index.html">Stáhnout</a></div>' +
-        '<div class="browser"><div class="browser-box"><img src="'+this.getBrowserIcon('f')+'" alt="Mozilla Firefox" title="Mozilla Firefox"></div><span>Mozilla Firefox</span><a href="http://www.mozilla.cz/stahnout/firefox/">Stáhnout</a></div>' +
-        '<div class="browser"><div class="browser-box"><img src="'+this.getBrowserIcon('s')+'" alt="Safari" title="Safari"></div><span>Safari</span><a href="https://support.apple.com/downloads/safari">Stáhnout</a></div>' +
-        '<div class="browser"><div class="browser-box"><img src="'+this.getBrowserIcon('ie')+'" alt="Internet Explorer" title="Internet Explorer"></div><span>Internet Explorer</span><a href="http://windows.microsoft.com/cs-cz/internet-explorer/download-ie">Stáhnout</a></div>' +
+        '<div class="browser"><div class="browser-box"><a href="https://www.google.com/intl/cs/chrome/browser/desktop/index.html"><img src="'+this.getBrowserIcon('ch')+'" alt="Chrome" title="Chrome"></div><span>Chrome</span><button type="button">Stáhnout</button></a></div>' +
+        '<div class="browser"><div class="browser-box"><a href="http://www.mozilla.cz/stahnout/firefox/"><img src="'+this.getBrowserIcon('f')+'" alt="Mozilla Firefox" title="Mozilla Firefox"></div><span>Mozilla Firefox</span><button type="button">Stáhnout</button></a></div>' +
+        '<div class="browser"><div class="browser-box"><a href="https://support.apple.com/downloads/safari"><img src="'+this.getBrowserIcon('s')+'" alt="Safari" title="Safari"></div><span>Safari</span><button type="button">Stáhnout</button></a></div>' +
+        '<div class="browser"><div class="browser-box"><a href="http://windows.microsoft.com/cs-cz/internet-explorer/download-ie"><img src="'+this.getBrowserIcon('ie')+'" alt="Internet Explorer" title="Internet Explorer"></div><span><button type="button">Internet Explorer</button></span>Stáhnout</a></div>' +
         '</div>' +
         '<h2>Proč aktualizovat?</h2>' +
         '<ul>' +
@@ -112,9 +112,9 @@ var BrowserUpdate = {
             element.innerHTML = content;
         } else {
             element.setAttribute("type", "text/css");
-            if (element.styleSheet) {   // for IE
+            if (element.styleSheet)
                 element.styleSheet.cssText = content;
-            } else {                // others
+            else {
                 var textnode = document.createTextNode(content);
                 element.appendChild(textnode);
             }
