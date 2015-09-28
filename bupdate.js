@@ -61,7 +61,7 @@ var BrowserUpdate = {
         '#browser-update-box #browser-update-content { position: relative; margin: 0 auto; width: 100%; max-width: 940px; padding: 30px; background: #fff; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; }' +
         '#browser-update-box #browser-update-content h1 { color: #333; font-size: 28px; margin: 0 0 30px 0; }' +
         '#browser-update-box #browser-update-content h2 { color: #333; font-size: 28px; }' +
-        '#browser-update-box #browser-update-content p { color: #333; font-size: 16px; margin: 15px 0; }' +
+        '#browser-update-box #browser-update-content p { color: #333; font-size: 16px; margin: 5px 0; }' +
         '#browser-update-box #browser-update-content #browsers { display: inline-block; width: 100%; margin: 45px 0 30px 0; }' +
         '#browser-update-box #browser-update-content ul li { position: relative; list-style: none; }' +
         '#browser-update-box #browser-update-content ul li:before { display: block; position: absolute; left: -30px; top: 5px; width: 17px; height: 10px; content:""; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAMAAAB4W0xQAAAAJFBMVEUAAABCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkL///8KOTd8AAAACnRSTlMAM0RVZoi7zN3uxv8r/gAAADhJREFUCNdVx0ECwBAQwMDoUpX/P7gXFnMb2Fo9wqv1mh1K5EbhGbY9utpyhOq3Np+bz0Fcg+hrP6wKAip/RZocAAAAAElFTkSuQmCC) no-repeat; }' +
