@@ -63,7 +63,7 @@ var BrowserUpdate = {
         '#browser-update-box #browser-update-content h2 { color: #333; font-size: 28px; margin-bottom: 25px; }' +
         '#browser-update-box #browser-update-content p { color: #333; font-size: 16px; margin: 0; }' +
         '#browser-update-box #browser-update-content #browsers { display: inline-block; width: 100%; margin: 35px 0; }' +
-        '#browser-update-box #browser-update-content ul { margin-bottom: 25px; }' +
+        '#browser-update-box #browser-update-content ul { margin: 0; margin-bottom: 25px; }' +
         '#browser-update-box #browser-update-content ul li { position: relative; list-style: none; line-height: 24px; }' +
         '#browser-update-box #browser-update-content ul li:before { display: block; position: absolute; left: -30px; top: 5px; width: 17px; height: 10px; content:""; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAMAAAB4W0xQAAAAJFBMVEUAAABCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkL///8KOTd8AAAACnRSTlMAM0RVZoi7zN3uxv8r/gAAADhJREFUCNdVx0ECwBAQwMDoUpX/P7gXFnMb2Fo9wqv1mh1K5EbhGbY9utpyhOq3Np+bz0Fcg+hrP6wKAip/RZocAAAAAElFTkSuQmCC) no-repeat; }' +
         '#browser-update-box #browser-update-content span.a { cursor: pointer; text-decoration: underline; }' +
