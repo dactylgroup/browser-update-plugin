@@ -63,12 +63,12 @@ var BrowserUpdate = {
         '#browser-update-box #browser-update-content h2 { color: #333!important; font-size: 28px!important; margin-bottom: 25px!important; }' +
         '#browser-update-box #browser-update-content p { color: #333!important; font-size: 16px!important; margin: 0!important; }' +
         '#browser-update-box #browser-update-content #browsers { display: inline-block!important; width: 100%!important; margin: 35px 0!important; }' +
-        '#browser-update-box #browser-update-content ul { margin: 0!important; margin-bottom: 25px!important; }' +
+        '#browser-update-box #browser-update-content ul { padding-left: 45px!important; margin: 0!important; margin-bottom: 25px!important; }' +
         '#browser-update-box #browser-update-content ul li { position: relative!important; list-style: none!important; line-height: 24px!important; }' +
         '#browser-update-box #browser-update-content ul li:before { display: block!important; position: absolute!important; left: -30px!important; top: 5px!important; width: 17px!important; height: 10px!important; content:""!important; background: url(data:image/png!important;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAMAAAB4W0xQAAAAJFBMVEUAAABCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkL///8KOTd8AAAACnRSTlMAM0RVZoi7zN3uxv8r/gAAADhJREFUCNdVx0ECwBAQwMDoUpX/P7gXFnMb2Fo9wqv1mh1K5EbhGbY9utpyhOq3Np+bz0Fcg+hrP6wKAip/RZocAAAAAElFTkSuQmCC) no-repeat!important; }' +
-        '#browser-update-box #browser-update-content span.a { cursor: pointer!important; text-decoration: underline!important; }' +
-        '#browser-update-box #browser-update-content #browsers .browser { float: left!important; width: 25%!important; text-align: center!important; }' +
-        '#browser-update-box #browser-update-content #browsers .browser a { text-decoration: none!important;}' +
+        '#browser-update-box #browser-update-content span.a { cursor: pointer!important; text-decoration: underline!important; outline: 0!important; }' +
+        '#browser-update-box #browser-update-content #browsers .browser { float: left!important; width: 25%!important; text-align: center!important; outline: 0!important; }' +
+        '#browser-update-box #browser-update-content #browsers .browser a { text-decoration: none!important; outline: 0!important; }' +
         '#browser-update-box #browser-update-content #browsers .browser img { display: block!important; outline: 0!important; max-width: 100%!important; height: auto!important; margin: 0 auto!important; }' +
         '#browser-update-box #browser-update-content #browsers .browser span { display: block!important; font-weight: bold!important; font-size: 20px!important; margin: 15px 0!important; color: #333!important; text-decoration: none!important; }' +
         '#browser-update-box #browser-update-content #browsers .browser .browser-box { display: inline-block!important; width: 100%!important; max-width: 120px!important; color: #333!important; line-height: 1.5!important; text-decoration: none!important; }' +
