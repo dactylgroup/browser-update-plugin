@@ -102,7 +102,7 @@ var BrowserUpdate = {
 
     hideInfoBox: function() {
         infoBox = document.getElementById('browser-update-box');
-        infoBox.style.display = 'none!important';
+        infoBox.style.cssText = 'display:none !important';
         this.createCookie('checkBrowser','false', 1);
     },
 
