@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="/css/main.css">
         <script type="text/javascript" src="/js/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="/js/main.js"></script>
+        <script>var versions = {MSIE:9,Firefox:25,Opera:12.1,Safari:7,Chrome:23};function browserUpdate() {var script = document.createElement("script");script.src = "https://rawgit.com/dactylgroup/browser-update-plugin/master/bupdate.js";document.body.appendChild(script);}try {document.addEventListener("DOMContentLoaded", browserUpdate, false)} catch(e){window.attachEvent("onload", browserUpdate)}</script>
     </head>
     <body>
         <main>
@@ -58,16 +59,6 @@
                 <textarea name="code" id="code"><script>var versions = {MSIE:9,Firefox:25,Opera:12.1,Safari:7,Chrome:23};function browserUpdate() {var script = document.createElement("script");script.src = "https://rawgit.com/dactylgroup/browser-update-plugin/master/bupdate.js";document.body.appendChild(script);}try {document.addEventListener("DOMContentLoaded", browserUpdate, false)} catch(e){window.attachEvent("onload", browserUpdate)}</script></textarea>
             </div>
         </main>
-        <script>
-            var versions = {MSIE:9,Firefox:25,Opera:12.1,Safari:7,Chrome:23};
-            function browserUpdate() {
-                var script = document.createElement("script");
-                script.src = "https://rawgit.com/dactylgroup/browser-update-plugin/master/bupdate.js";
-                document.body.appendChild(script);
-            }
-            try {document.addEventListener("DOMContentLoaded", browserUpdate, false)}
-            catch(e){window.attachEvent("onload", browserUpdate)}
-        </script>
     </body>
 </html>
 
