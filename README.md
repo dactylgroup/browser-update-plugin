@@ -1,4 +1,4 @@
-# Dactyl Brower Update Plugin
+# Dactyl Browser Update Plugin
 
 Upozorněte uživatele přistupujícího na vaše webové stránky, že používá zastaralý webový prohlížeč a nabídněte mu možnost prohlížeč aktualizovat. Plugin detekuje zastaralý prohlížeč a přes celou obrazovku zobrazí uživateli výzvu s doporučením prohlížeč aktualizovat. V nabídce jsou čtyři nejpoužívanější prohlížeče s odkazem vždy na hlavní stránku daného projektu, kde je možné prohlížeč stáhnout. V dialogovém okně je zároveň uživateli stručně vysvětleno, proč by si měl prohlížeč aktualizovat.  Uživatel má možnost plugin zavřít a aktualizaci prohlížeče neprovést. V takovém případě se mu dialogové okno znovu zobrazí až po jedno dni.
 
