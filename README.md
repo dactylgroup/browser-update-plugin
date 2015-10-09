@@ -14,8 +14,9 @@ Instalace:
         <head>
         </head>
         <body>
-            <script>var versions = {MSIE:9,Firefox:25,Opera:12.1,Safari:7,Chrome:23};var script =         document.createElement("script");script.src =     "https://rawgit.com/dactylgroup/browser-update-plugin/master/bupdate.js";document.getElementsByTagName('head')[0].appendChild(script);</script>
+            <script>var versions = {MSIE:9,Firefox:25,Opera:12.1,Safari:7,Chrome:23};var script = document.createElement("script");script.src = "https://rawgit.com/dactylgroup/browser-update-plugin/master/bupdate.js";document.getElementsByTagName('head')[0].appendChild(script);</script>
         </body>
+    </html>
 
 Je možné posílat návrhy na případná vylepšení nebo chyby na info@dactylgroup.com
 
