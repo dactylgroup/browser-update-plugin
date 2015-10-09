@@ -5,9 +5,9 @@
         <link rel="stylesheet" href="/css/main.css">
         <script type="text/javascript" src="/js/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="/js/main.js"></script>
-        <script>var versions = {MSIE:9,Firefox:25,Opera:12.1,Safari:7,Chrome:23};function browserUpdate() {var script = document.createElement("script");script.src = "https://rawgit.com/dactylgroup/browser-update-plugin/master/bupdate.js";document.body.appendChild(script);}try {document.addEventListener("DOMContentLoaded", browserUpdate, false)} catch(e){window.attachEvent("onload", browserUpdate)}</script>
     </head>
     <body>
+        <script>var versions = {MSIE:9,Firefox:25,Opera:12.1,Safari:7,Chrome:23};var script = document.createElement("script");script.src = "https://rawgit.com/dactylgroup/browser-update-plugin/master/bupdate.js";document.getElementsByTagName('head')[0].appendChild(script);</script>
         <main>
             <div class="content">
                 <h1>Instalace upozornění na váš web</h1>
@@ -55,8 +55,8 @@
                         </select>
                     </div>
                 </div>
-                <p><strong>Kód vložte kamkoli na svůj web: </strong></p>
-                <textarea name="code" id="code"><script>var versions = {MSIE:9,Firefox:25,Opera:12.1,Safari:7,Chrome:23};function browserUpdate() {var script = document.createElement("script");script.src = "https://rawgit.com/dactylgroup/browser-update-plugin/master/bupdate.js";document.body.appendChild(script);}try {document.addEventListener("DOMContentLoaded", browserUpdate, false)} catch(e){window.attachEvent("onload", browserUpdate)}</script></textarea>
+                <p><strong>Kód vložte kamkoli do body(těla stránky): </strong></p>
+                <textarea name="code" id="code"><script>var versions = {MSIE:9,Firefox:25,Opera:12.1,Safari:7,Chrome:23};var script = document.createElement("script");script.src = "https://rawgit.com/dactylgroup/browser-update-plugin/master/bupdate.js";document.getElementsByTagName('head')[0].appendChild(script);</script></textarea>
             </div>
         </main>
     </body>
