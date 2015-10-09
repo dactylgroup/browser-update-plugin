@@ -7,7 +7,7 @@ Upozorněte uživatele přistupujícího na vaše webové stránky, že použív
 
 Instalace pluginu na web je možná pouhým zkopírováním jednoduchého skriptu hned za <body> tag na každé stránce, kde plugin chcete použít. Ve skriptu je možné nastavit verze jednotlivých prohlížečů, které se již mají považovat za zastaralé. Skript je možné vygenerovat na naší stránce http://dactylgroup.com/plugins/browser-update-plugin.
 
-Ukázka vložení skriptu na web:
+Ukázka instalace skriptu za <body> tag na webu:
 -------
     <!DOCTYPE html>
     <html>
