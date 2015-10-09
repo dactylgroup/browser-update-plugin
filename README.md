@@ -23,7 +23,7 @@ Ukázka instalace skriptu za &lt;body&gt; tag na webu:
         </body>
     </html>
 
-Je možné posílat návrhy na případná vylepšení nebo chyby na info@dactylgroup.com
+Návrhy na případná vylepšení nebo chyby je možné posílat na info@dactylgroup.com
 
 Licence:
 -------
