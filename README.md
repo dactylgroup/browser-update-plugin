@@ -5,9 +5,9 @@ Upozorněte uživatele přistupujícího na vaše webové stránky, že použív
 <screenshot pluginu (v pozdí bude nějaká naše stránka (která není rozbitá! 😄))>
 ![Alt text](/../master/image.png?raw=true "Browser Detect Plugin")
 
-Instalace pluginu na web je možná pouhým zkopírováním jednoduchého skriptu hned za "<body>" tag na každé stránce, kde plugin chcete použít. Ve skriptu je možné nastavit verze jednotlivých prohlížečů, které se již mají považovat za zastaralé. Skript je možné vygenerovat na naší stránce http://dactylgroup.com/plugins/browser-update-plugin.
+Instalace pluginu na web je možná pouhým zkopírováním jednoduchého skriptu hned za &lt;body&gt; tag na každé stránce, kde plugin chcete použít. Ve skriptu je možné nastavit verze jednotlivých prohlížečů, které se již mají považovat za zastaralé. Skript je možné vygenerovat na naší stránce http://dactylgroup.com/plugins/browser-update-plugin.
 
-Ukázka instalace skriptu za <body> tag na webu:
+Ukázka instalace skriptu za &lt;body&gt; tag na webu:
 -------
     <!DOCTYPE html>
     <html>
